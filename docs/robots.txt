@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://unstandardofficial.github.io/kaimono-notes/sitemap.xml

@@ -1,0 +1,52 @@
+name: auto-post
+
+on:
+  schedule:
+    # 毎時17分に起動。各アカウントは accounts/*.json の run_hours（日本時間）の回だけ動く
+    - cron: "17 * * * *"
+  workflow_dispatch:      # 「Run workflow」ボタンで手動実行（初回の確認用）
+    inputs:
+      account:
+        description: "このアカウントだけ動かす（空なら全アカウント）"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-post
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: 記事作成とSNS投稿
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # アカウント別の鍵（THREADS_ACCESS_TOKEN_KITCHEN など）をまとめて渡す。ログには伏せ字で出る
+          SECRETS_JSON: ${{ toJSON(secrets) }}
+          MANUAL_ACCOUNT: ${{ github.event.inputs.account }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "$MANUAL_ACCOUNT" ]; then python -m bot.main --account "$MANUAL_ACCOUNT"; else python -m bot.main --all; fi
+          else
+            python -m bot.main
+          fi
+      - name: 記事と状態を保存
+        if: always()
+        run: |
+          git config user.name "auto-post-bot"
+          git config user.email "auto-post-bot@users.noreply.github.com"
+          git add docs data
+          git diff --cached --quiet || git commit -m "auto: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') の投稿"
+          git push
