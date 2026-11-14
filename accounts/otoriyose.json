@@ -34,7 +34,7 @@
       "include_link": true
     },
     "threads": {
-      "enabled": false,
+      "enabled": true,
       "max_posts_per_day": 3
     }
   }
