@@ -201,6 +201,9 @@ def run(dry_run: bool = False, run_all: bool = False, only: str | None = None) -
     data_root = root / ("preview_data" if dry_run else "data")
     posted = load_json(data_root / "posted_codes.json", {})  # 商品コード → 紹介したブランド（全ブランド共通）
 
+    if not dry_run and not secrets.get("RAKUTEN_APP_ID"):
+        print("[main] 楽天の鍵がまだ入っていないので、今回は何もしません（設定待ち）")
+        return 0
     due = [a for a in accounts if run_all or only or now.hour in a.get("run_hours", [])]
     if not due:
         print(f"[main] {now:%H}時に動くアカウントはありません")
