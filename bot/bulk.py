@@ -49,7 +49,7 @@ def ai(model: str, prompt: str, max_tokens: int) -> str:
 
 def ai_json(model: str, prompt: str, max_tokens: int):
     for attempt in range(3):
-        text = ai(model, prompt + "\n\n出力はJSONだけ。前後に説明や```を付けない。文字列の中の改行は\\nで書く。", max_tokens)
+        text = ai(model, prompt + "\n\n出力はJSONだけ。前後に説明や```を付けない。文字列の中の改行は\\nで書く。文字列の中で半角の\"は使わず、引用は「」を使う。", max_tokens)
         m = re.search(r"[\[{].*[\]}]", text, re.S)
         if not m:
             continue
