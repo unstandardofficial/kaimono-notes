@@ -10,14 +10,23 @@ permissions:
   contents: write
 
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.p.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: echo "slugs=$(python3 -c "import json;print(json.dumps(open('.github/bulk-trigger').read().split()))")" >> "$GITHUB_OUTPUT"
   make:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
       fail-fast: false
       max-parallel: 5
       matrix:
-        slug: [kurashi, kitchen, kosodate, otoriyose, gadget]
+        slug: ${{ fromJSON(needs.plan.outputs.slugs) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

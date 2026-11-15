@@ -48,9 +48,16 @@ def ai(model: str, prompt: str, max_tokens: int) -> str:
 
 
 def ai_json(model: str, prompt: str, max_tokens: int):
-    text = ai(model, prompt + "\n\n出力はJSONだけ。前後に説明や```を付けない。", max_tokens)
-    m = re.search(r"[\[{].*[\]}]", text, re.S)
-    return json.loads(m.group(0)) if m else None
+    for attempt in range(3):
+        text = ai(model, prompt + "\n\n出力はJSONだけ。前後に説明や```を付けない。文字列の中の改行は\\nで書く。", max_tokens)
+        m = re.search(r"[\[{].*[\]}]", text, re.S)
+        if not m:
+            continue
+        try:
+            return json.loads(m.group(0), strict=False)
+        except json.JSONDecodeError as e:
+            print(f"  JSONの読み取りに失敗（{attempt + 1}回目）: {e}")
+    return None
 
 
 def brand_brief(a: dict) -> str:
@@ -73,8 +80,8 @@ def run(slug: str) -> None:
                          "検索されやすい悩み（例：〇〇 選び方、〇〇 おすすめ 比較、〇〇 失敗しない）から逆算する。"
                          '形式：[{"title":"記事タイトル（32字以内）","keyword":"狙う検索語"}]', 2000) or []
         guides = []
-        for t in topics[:10]:
-            body = ai(BIG, f"{brief}\n\n記事タイトル：{t['title']}\n狙う検索語：{t['keyword']}\n\n"
+        for t in [x for x in topics if isinstance(x, dict) and x.get('title')][:10]:
+            body = ai(BIG, f"{brief}\n\n記事タイトル：{t['title']}\n狙う検索語：{t.get('keyword', t.get('title', ''))}\n\n"
                       "この記事を日本語のMarkdownで書く。構成：導入（読者の困りごと）→結論（選ぶ観点3〜5個）→観点ごとの解説→"
                       "比較表（観点×タイプ別、商品名なし）→【商品枠】を3つ置く場所→よくある質問3つ→まとめ。2500〜3500字。"
                       f"見出しは##と###。\n\n{RULES}\n{EXTRA}", 8000)
@@ -85,10 +92,10 @@ def run(slug: str) -> None:
         posts = []
         for i in range(4):
             got = ai_json(MID, f"{brief}\n\nThreads用の、商品リンクなし・宣伝なしの役立ち投稿を10本。"
-                          f"テーマが重ならないように（{i+1}回目／4回。前の回と別テーマ：{[p['title'] for p in posts]}）。"
+                          f"テーマが重ならないように（{i+1}回目／4回。前の回と別テーマ：{[p.get('title', '') for p in posts if isinstance(p, dict)]}）。"
                           "1本150〜300字。1行目で手を止めさせる見出し、本文は改行多め。季節（12〜1月の大掃除・帰省・年末年始・新生活準備）も混ぜる。"
                           f'形式：[{{"title":"見出し","body":"本文"}}]\n\n{RULES}\n{EXTRA}', 6000) or []
-            posts += got
+            posts += [p for p in got if isinstance(p, dict)]
         save("threads.json", posts)
     # ③ セールの型
     if not (out / "sale_templates.json").exists():
