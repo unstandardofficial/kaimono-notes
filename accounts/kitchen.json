@@ -37,5 +37,14 @@
       "enabled": true,
       "max_posts_per_day": 3
     }
+  },
+  "engage": {
+    "handle": "daidokoro.chou",
+    "keywords": [
+      "キッチン収納",
+      "台所 片付け",
+      "収納 100均"
+    ],
+    "per_day": 5
   }
 }

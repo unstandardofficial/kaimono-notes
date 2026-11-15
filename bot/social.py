@@ -34,11 +34,11 @@ def post_x(text: str, keys: list[str]) -> str:
     raise SocialError(f"Xへの投稿に失敗: {last.status_code if last is not None else '-'} {last.text[:300] if last is not None else ''}")
 
 
-def post_threads(text: str, image_url: str | None, token: str, user: str = "me") -> str:
+def post_threads(text: str, image_url: str | None, token: str, user: str = "me", extra: dict | None = None) -> str:
     if not token:
         raise SocialError("THREADS_ACCESS_TOKEN が設定されていません")
     base = f"https://graph.threads.net/v1.0/{user}"
-    params = {"text": text[:500], "access_token": token, "media_type": "TEXT"}
+    params = {"text": text[:500], "access_token": token, "media_type": "TEXT", **(extra or {})}
     if image_url:
         params.update(media_type="IMAGE", image_url=image_url)
     r = requests.post(f"{base}/threads", params=params, timeout=30)

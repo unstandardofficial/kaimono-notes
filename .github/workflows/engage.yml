@@ -1,0 +1,54 @@
+name: engage
+
+on:
+  schedule:
+    - cron: "5 22 * * *"   # 毎朝7:05（日本時間）に下書きを作る
+    - cron: "37 * * * *"   # 毎時37分、チェック済みの下書きを投稿
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "draft か post"
+        required: false
+        default: "post"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: auto-post
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 交流（下書き or 投稿）
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          THREADS_ACCESS_TOKEN_KURASHI: ${{ secrets.THREADS_ACCESS_TOKEN_KURASHI }}
+          THREADS_ACCESS_TOKEN_KITCHEN: ${{ secrets.THREADS_ACCESS_TOKEN_KITCHEN }}
+          THREADS_ACCESS_TOKEN_KOSODATE: ${{ secrets.THREADS_ACCESS_TOKEN_KOSODATE }}
+          THREADS_ACCESS_TOKEN_OTORIYOSE: ${{ secrets.THREADS_ACCESS_TOKEN_OTORIYOSE }}
+          THREADS_ACCESS_TOKEN_GADGET: ${{ secrets.THREADS_ACCESS_TOKEN_GADGET }}
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          if [ -z "$MODE" ]; then
+            if [ "${{ github.event.schedule }}" = "5 22 * * *" ]; then MODE=draft; else MODE=post; fi
+          fi
+          python -m bot.engage "$MODE"
+      - name: 状態を保存
+        if: always()
+        run: |
+          git config user.name "auto-post-bot"
+          git config user.email "auto-post-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "engage: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+          git pull --rebase -q && git push

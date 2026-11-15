@@ -33,5 +33,14 @@
       "enabled": true,
       "max_posts_per_day": 3
     }
+  },
+  "engage": {
+    "handle": "kosodate.stock",
+    "keywords": [
+      "おむつ",
+      "育児 買ってよかった",
+      "子育て 時短"
+    ],
+    "per_day": 5
   }
 }

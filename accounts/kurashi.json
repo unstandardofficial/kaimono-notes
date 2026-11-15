@@ -33,5 +33,14 @@
       "enabled": true,
       "max_posts_per_day": 3
     }
+  },
+  "engage": {
+    "handle": "kurashi_kaitashi",
+    "keywords": [
+      "日用品 ストック",
+      "まとめ買い 日用品",
+      "洗剤 詰め替え"
+    ],
+    "per_day": 5
   }
 }

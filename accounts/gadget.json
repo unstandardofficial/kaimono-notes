@@ -37,5 +37,14 @@
       "enabled": true,
       "max_posts_per_day": 3
     }
+  },
+  "engage": {
+    "handle": "kaden.erabikata",
+    "keywords": [
+      "充電器 おすすめ",
+      "ガジェット",
+      "家電 買い替え"
+    ],
+    "per_day": 5
   }
 }

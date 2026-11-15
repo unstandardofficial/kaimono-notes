@@ -37,5 +37,14 @@
       "enabled": true,
       "max_posts_per_day": 3
     }
+  },
+  "engage": {
+    "handle": "otoriyose.bin",
+    "keywords": [
+      "お取り寄せ",
+      "ふるさと納税 冷凍",
+      "訳あり グルメ"
+    ],
+    "per_day": 5
   }
 }
