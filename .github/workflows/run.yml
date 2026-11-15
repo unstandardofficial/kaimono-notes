@@ -33,8 +33,19 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # アカウント別の鍵（THREADS_ACCESS_TOKEN_KITCHEN など）をまとめて渡す。ログには伏せ字で出る
-          SECRETS_JSON: ${{ toJSON(secrets) }}
+          # 使う鍵だけを名前で渡す（全Secretsをまとめて渡すとGitHubに危険な設定と判定される）
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+          THREADS_ACCESS_TOKEN_KURASHI: ${{ secrets.THREADS_ACCESS_TOKEN_KURASHI }}
+          THREADS_ACCESS_TOKEN_KITCHEN: ${{ secrets.THREADS_ACCESS_TOKEN_KITCHEN }}
+          THREADS_ACCESS_TOKEN_KOSODATE: ${{ secrets.THREADS_ACCESS_TOKEN_KOSODATE }}
+          THREADS_ACCESS_TOKEN_OTORIYOSE: ${{ secrets.THREADS_ACCESS_TOKEN_OTORIYOSE }}
+          THREADS_ACCESS_TOKEN_GADGET: ${{ secrets.THREADS_ACCESS_TOKEN_GADGET }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           MANUAL_ACCOUNT: ${{ github.event.inputs.account }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
