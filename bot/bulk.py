@@ -88,9 +88,12 @@ def run(slug: str) -> None:
             guides.append({**t, "markdown": body})
             save("guides.json", guides)
     # ② Threads 40本
-    if not (out / "threads.json").exists():
-        posts = []
-        for i in range(4):
+    posts = json.loads((out / "threads.json").read_text(encoding="utf-8")) if (out / "threads.json").exists() else []
+    posts = [p for p in (posts or []) if isinstance(p, dict)]
+    if len(posts) < 40:
+        for i in range(6):
+            if len(posts) >= 40:
+                break
             got = ai_json(MID, f"{brief}\n\nThreads用の、商品リンクなし・宣伝なしの役立ち投稿を10本。"
                           f"テーマが重ならないように（{i+1}回目／4回。前の回と別テーマ：{[p.get('title', '') for p in posts if isinstance(p, dict)]}）。"
                           "1本150〜300字。1行目で手を止めさせる見出し、本文は改行多め。季節（12〜1月の大掃除・帰省・年末年始・新生活準備）も混ぜる。"
@@ -105,10 +108,14 @@ def run(slug: str) -> None:
                       f'形式：{{"blackfriday":["..."],"supersale":["..."],"hatsuuri":["..."]}}\n\n{RULES}\n{EXTRA}', 6000)
         save("sale_templates.json", tpl)
     # ④ カルーセル台本
-    if not (out / "carousels.json").exists():
-        car = ai_json(MID, f"{brief}\n\nInstagramの保存されやすいカルーセル投稿（画像5〜7枚）の台本を10本。"
+    old = json.loads((out / "carousels.json").read_text(encoding="utf-8")) if (out / "carousels.json").exists() else None
+    if not old:
+        car = []
+        for i in range(2):
+            got = ai_json(MID, f"{brief}\n\nInstagramの保存されやすいカルーセル投稿（画像5〜7枚）の台本を5本。前と別テーマ：{[c.get('title') for c in car]}"
                       "1枚目は大きな見出し、2〜6枚目は1枚1ポイント（20〜40字）、最後は「保存して買う前に見返す」。キャプションも付ける。"
-                      f'形式：[{{"title":"","slides":["1枚目","2枚目"],"caption":""}}]\n\n{RULES}\n{EXTRA}', 8000)
+                      f'形式：[{{"title":"","slides":["1枚目","2枚目"],"caption":""}}]\n\n{RULES}\n{EXTRA}', 6000) or []
+            car += [c for c in got if isinstance(c, dict)]
         save("carousels.json", car)
 
 
