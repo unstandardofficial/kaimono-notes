@@ -1,0 +1,39 @@
+name: manual-post
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/manual_queue.json"]
+  schedule:
+    - cron: "47 * * * *"   # 予約時刻を過ぎた承認済み投稿を毎時47分に出す
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-post
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 承認済みの予約投稿
+        env:
+          SECRETS_JSON: ${{ toJSON(secrets) }}
+        run: python -m bot.manual_post
+      - name: 結果を保存
+        if: always()
+        run: |
+          git config user.name "auto-post-bot"
+          git config user.email "auto-post-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "manual: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') の予約投稿"
+          git pull --rebase -q && git push
