@@ -109,9 +109,11 @@ def run(slug: str) -> None:
         save("sale_templates.json", tpl)
     # ④ カルーセル台本
     old = json.loads((out / "carousels.json").read_text(encoding="utf-8")) if (out / "carousels.json").exists() else None
-    if not old:
-        car = []
-        for i in range(2):
+    car = [c for c in (old or []) if isinstance(c, dict)]
+    if len(car) < 10:
+        for i in range(3):
+            if len(car) >= 10:
+                break
             got = ai_json(MID, f"{brief}\n\nInstagramの保存されやすいカルーセル投稿（画像5〜7枚）の台本を5本。前と別テーマ：{[c.get('title') for c in car]}"
                       "1枚目は大きな見出し、2〜6枚目は1枚1ポイント（20〜40字）、最後は「保存して買う前に見返す」。キャプションも付ける。"
                       f'形式：[{{"title":"","slides":["1枚目","2枚目"],"caption":""}}]\n\n{RULES}\n{EXTRA}', 6000) or []
