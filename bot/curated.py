@@ -28,5 +28,5 @@ def load(root: Path, slug: str, affiliate_id: str, theme: str = "楽天の売れ
         out.append(Product(code=code, name=it["name"], price=int(it["price"]), url=affiliate_url(it["item_url"], affiliate_id),
                            image=it.get("image", ""), shop=it.get("shop", ""), review_average=float(it.get("review_average") or 0),
                            review_count=int(it.get("review_count") or 0), rank=it.get("rank"),
-                           catchcopy=f"価格・レビュー数は{d.get('as_of', '')}時点", extra={"as_of": d.get("as_of", "")}))
+                           extra={"as_of": d.get("as_of", "")}))
     return theme, out

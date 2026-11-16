@@ -70,10 +70,13 @@ def _extract_json(text: str) -> dict | None:
 
 def _product_brief(i: int, p: Product) -> str:
     rating = (f"平均{p.review_average:.2f}・" if p.review_average else "") + f"{p.review_count:,}件"
+    as_of = p.extra.get("as_of") if p.extra else None
+    note = (f"    注意: 価格・レビュー数は{as_of}時点。価格に触れるときは「{as_of}時点」と添える。平均評価は不明なので書かない\n"
+            if as_of else "")
     return (f"[{i}] 商品名: {p.name}\n    価格: {_yen(p.price)} / 送料無料: {'はい' if p.postage_free else 'いいえ'}"
             f" / ショップ: {p.shop}\n    レビュー: {rating}"
             f" / ランキング: {p.rank or '-'}位（{p.genre_name}）\n    キャッチコピー: {p.catchcopy}\n"
-            f"    商品説明（抜粋）: {p.caption[:300]}")
+            + note + f"    商品説明（抜粋）: {p.caption[:300]}")
 
 
 def write_article(products: list[Product], theme: str, event: str | None, voice: str = "") -> dict:
@@ -114,8 +117,8 @@ def _template_article(products: list[Product], theme: str, event: str | None) ->
         items.append({
             "heading": p.short_name[:24],
             "point": (f"{p.genre_name}ランキングで{p.rank}位に入っている商品です。" if p.rank else "")
-                     + f"{stars}と評価が安定していて、{free}{_yen(p.price)}で買えます。"
-                     + (f"ショップの説明では「{p.catchcopy[:60]}」とされています。" if p.catchcopy else ""),
+                     + (f"{stars}と評価が安定していて、" if p.review_average else f"{stars}が集まっていて、") + f"{free}{_yen(p.price)}で買えます" + (f"（{p.extra.get('as_of')}時点の価格）" if p.extra.get("as_of") else "") + "。"
+                     + (f"ショップの説明では「{p.catchcopy[:60]}」とされています。" if p.catchcopy and not p.extra.get("as_of") else ""),
             "who_for": "評判を見てから選びたい人に",
         })
     return {
