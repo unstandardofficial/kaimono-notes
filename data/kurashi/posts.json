@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "20261116-1516",
+  "date": "2026-11-16T15:16:31+09:00",
+  "theme": "日用品雑貨",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている日用品雑貨 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の日用品雑貨の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "アタック 抗菌EX 洗濯洗剤 詰替 超特大サイズ",
+     "point": "ランキングで4位に入っている商品です。レビュー4,312件と評価が安定していて、6,171円で買えます。ショップの説明では「価格・レビュー数は2026-11-16時点」とされています。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "日本製 ホテルスタイルタオル ビッグフェイスタオ",
+     "point": "ランキングで5位に入っている商品です。レビュー18,430件と評価が安定していて、3,500円で買えます。ショップの説明では「価格・レビュー数は2026-11-16時点」とされています。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "防災グッズ 非常用 簡易トイレ 携帯トイレ スー",
+     "point": "ランキングで11位に入っている商品です。レビュー305件と評価が安定していて、6,980円で買えます。ショップの説明では「価格・レビュー数は2026-11-16時点」とされています。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "rakuten24:404889",
+    "name": "アタック 抗菌EX 洗濯洗剤 詰替 超特大サイズ 梱販売用(6袋",
+    "price": 6171,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404889%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404889%2F",
+    "image": "",
+    "shop": "楽天24",
+    "review_average": 0.0,
+    "review_count": 4312,
+    "catchcopy": "価格・レビュー数は2026-11-16時点",
+    "caption": "",
+    "rank": 4,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "アタック 抗菌EX 洗濯洗剤 詰替 超特大サイズ 梱販売用(6袋"
+   },
+   {
+    "code": "toucher-home:925619",
+    "name": "日本製 ホテルスタイルタオル ビッグフェイスタオル 4枚セ",
+    "price": 3500,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F925619%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F925619%2F",
+    "image": "",
+    "shop": "タオル直販店 ヒオリ",
+    "review_average": 0.0,
+    "review_count": 18430,
+    "catchcopy": "価格・レビュー数は2026-11-16時点",
+    "caption": "",
+    "rank": 5,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "日本製 ホテルスタイルタオル ビッグフェイスタオル 4枚セ"
+   },
+   {
+    "code": "prime-brain:01altl_sutaro",
+    "name": "防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっ",
+    "price": 6980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fprime-brain%2F01altl_sutaro%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fprime-brain%2F01altl_sutaro%2F",
+    "image": "",
+    "shop": "プライム製薬",
+    "review_average": 0.0,
+    "review_count": 305,
+    "catchcopy": "価格・レビュー数は2026-11-16時点",
+    "caption": "",
+    "rank": 11,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっ"
+   }
+  ]
+ }
+]
