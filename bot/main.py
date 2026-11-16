@@ -168,7 +168,11 @@ def run_account(acct: dict, cfg: dict, now: datetime, secrets: Secrets, posted: 
                 texts = write_social(article, chosen, url, "threads", 3, event, voice, acct["site"].get("angles", ""))
                 queue["threads"] += [{"text": t, "image": chosen[i % len(chosen)].image} for i, t in enumerate(texts)]
             print(f"[{slug}] 記事: {article['title']} → {url}")
-        sitegen.build(posts, acct["site"], site_url, out=out_dir)
+
+    # ブログは毎回作り直す（商品一覧・商品ページも）
+    site = {**acct["site"], "threads": acct.get("engage", {}).get("handle", "")}
+    cat = curated.catalog(root, slug, secrets.get("RAKUTEN_AFFILIATE_ID")) if not dry_run else []
+    sitegen.build(posts, site, site_url, out=out_dir, catalog=cat, theme=sitegen.THEMES.get(slug))
 
     # 2) SNS（1回の実行で各1本まで）
     ch = acct["channels"]

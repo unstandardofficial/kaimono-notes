@@ -142,3 +142,16 @@ def test_curated_products(tmp_path):
     theme, items = curated.load(tmp_path, "x", "aaa.bbb")
     assert items[0].code == "shop:123" and items[0].url.startswith("https://hb.afl.rakuten.co.jp/hgc/aaa.bbb/?pc=https%3A%2F%2Fitem")
     assert items[0].review_average == 0
+
+
+def test_product_pages_and_list(tmp_path):
+    cat = [{"code": "shop:1", "name": "テスト商品 長い名前", "short_name": "テスト商品", "price": 1200, "url": "https://hb.afl.rakuten.co.jp/x",
+            "image": "", "shop": "S", "review_count": 10, "review_average": 0, "rank": 3, "extra": {"as_of": "2026-11-16"},
+            "note": "ひとこと", "howto": ["開ける", "使う"], "status": ""},
+           {"code": "shop:2", "name": "除外品", "short_name": "除外品", "price": 1, "url": "u", "review_count": 0, "status": "除外"}]
+    site.build([], {"title": "T｜t", "description": "D", "author": "A", "threads": "h"}, "https://e.com/b/k", out=tmp_path,
+               catalog=cat, theme=site.THEMES["kurashi"])
+    lst = (tmp_path / "products.html").read_text("utf-8")
+    assert "テスト商品" in lst and "除外品" not in lst and "11/16時点" in lst
+    page = (tmp_path / "products" / "shop-1.html").read_text("utf-8")
+    assert "使い方" in page and 'rel="nofollow sponsored noopener"' in page and "アフィリエイト広告" in page
