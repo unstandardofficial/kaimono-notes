@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "20261116-1853",
+  "date": "2026-11-16T18:53:49+09:00",
+  "theme": "キッチン用品",
+  "event": null,
+  "article": {
+   "title": "楽天で売れているキッチン用品 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場のキッチン用品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "VAKUEN 真空保存容器 電動 強力密閉 鮮度",
+     "point": "ランキングで4位に入っている商品です。レビュー6,606件が集まっていて、3,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "オイルスプレー 片手でシュッ 円形ミスト 霧吹き",
+     "point": "ランキングで6位に入っている商品です。レビュー393件が集まっていて、2,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "スターフィルター 換気扇フィルター レンジフード",
+     "point": "ランキングで8位に入っている商品です。レビュー4,589件が集まっていて、3,080円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "kitchenavi:2498-001010",
+    "name": "VAKUEN 真空保存容器 電動 強力密閉 鮮度長持ち コンテナ",
+    "price": 3980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkitchenavi%2F2498-001010%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkitchenavi%2F2498-001010%2F",
+    "image": "",
+    "shop": "KitcheNavi",
+    "review_average": 0.0,
+    "review_count": 6606,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 4,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "VAKUEN 真空保存容器 電動 強力密閉 鮮度長持ち コンテナ"
+   },
+   {
+    "code": "shinra-life:202606002r1",
+    "name": "オイルスプレー 片手でシュッ 円形ミスト 霧吹き",
+    "price": 2980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinra-life%2F202606002r1%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fshinra-life%2F202606002r1%2F",
+    "image": "",
+    "shop": "森羅LIFE",
+    "review_average": 0.0,
+    "review_count": 393,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 6,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "オイルスプレー 片手でシュッ 円形ミスト 霧吹き"
+   },
+   {
+    "code": "starfilter:sfsetm03",
+    "name": "スターフィルター 換気扇フィルター レンジフードフィルター",
+    "price": 3080,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfilter%2Fsfsetm03%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfilter%2Fsfsetm03%2F",
+    "image": "",
+    "shop": "スターフィルター 楽",
+    "review_average": 0.0,
+    "review_count": 4589,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 8,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "スターフィルター 換気扇フィルター レンジフードフィルター"
+   }
+  ]
+ }
+]
