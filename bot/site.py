@@ -54,8 +54,8 @@ def render_post(post: dict, site: dict, site_url: str) -> str:
     cards = []
     for it, p in zip(post["article"]["items"], post["products"]):
         cards.append(f"""<section class="card"><h2>{E(it['heading'])}</h2><div class="prod">
-<img src="{E(p['image'])}" alt="{E(p['short_name'])}" loading="lazy">
-<div><div class="meta">{E(p['shop'])}・レビュー{p['review_count']:,}件（平均{p['review_average']:.1f}）</div>
+{f'<img src="{E(p["image"])}" alt="{E(p["short_name"])}" loading="lazy">' if p.get('image') else ''}
+<div><div class="meta">{E(p['shop'])}・レビュー{p['review_count']:,}件{('（平均' + format(p['review_average'], '.1f') + '）') if p.get('review_average') else ''}</div>
 <div class="price">{p['price']:,}円{'（送料無料）' if p['postage_free'] else ''}</div>
 <p>{E(it['point'])}</p><div class="who">{E(it['who_for'])}</div>
 <a class="btn" href="{E(p['url'])}" target="_blank" rel="nofollow sponsored noopener">楽天市場で見る</a></div></div></section>""")

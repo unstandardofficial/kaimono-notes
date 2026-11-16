@@ -69,8 +69,9 @@ def _extract_json(text: str) -> dict | None:
 
 
 def _product_brief(i: int, p: Product) -> str:
+    rating = (f"平均{p.review_average:.2f}・" if p.review_average else "") + f"{p.review_count:,}件"
     return (f"[{i}] 商品名: {p.name}\n    価格: {_yen(p.price)} / 送料無料: {'はい' if p.postage_free else 'いいえ'}"
-            f" / ショップ: {p.shop}\n    レビュー: 平均{p.review_average:.2f}・{p.review_count:,}件"
+            f" / ショップ: {p.shop}\n    レビュー: {rating}"
             f" / ランキング: {p.rank or '-'}位（{p.genre_name}）\n    キャッチコピー: {p.catchcopy}\n"
             f"    商品説明（抜粋）: {p.caption[:300]}")
 
@@ -108,7 +109,7 @@ def _template_article(products: list[Product], theme: str, event: str | None) ->
     ev = f"{event}の期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。" if event else ""
     items = []
     for p in products:
-        stars = f"レビュー{p.review_count:,}件・平均{p.review_average:.1f}"
+        stars = f"レビュー{p.review_count:,}件" + (f"・平均{p.review_average:.1f}" if p.review_average else "")
         free = "送料無料で、" if p.postage_free else ""
         items.append({
             "heading": p.short_name[:24],
@@ -157,7 +158,7 @@ def _template_social(products: list[Product], n: int, event: str | None) -> list
     for p in random.sample(products, k=min(n, len(products))):
         hook = random.choice(["地味に助かる定番", "買い替えるならこれ", "レビューが多くて安心な一品"])
         ev = f"{event}のまとめ買いにも。" if event else ""
-        outs.append(f"{hook}。{p.short_name[:30]}は{p.review_count:,}件のレビューで平均{p.review_average:.1f}。{_yen(p.price)}{'・送料無料' if p.postage_free else ''}。{ev}")
+        outs.append(f"{hook}。{p.short_name[:30]}は{p.review_count:,}件のレビュー{('で平均' + format(p.review_average, '.1f')) if p.review_average else ''}。{_yen(p.price)}{'・送料無料' if p.postage_free else ''}。{ev}")
     while len(outs) < n:
         outs.append(outs[-1] if outs else "楽天の売れ筋からまとめました。")
     return outs

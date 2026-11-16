@@ -19,6 +19,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import site as sitegen
+from . import curated
 from .rakuten import Product, RakutenClient, RakutenError, parse_item, pick_products
 from .social import SocialError, post_threads, post_x
 from .writer import write_article, write_social
@@ -72,6 +73,8 @@ def load_accounts(root: Path) -> list[dict]:
 
 
 def fetch_candidates(acct: dict, state: dict, event: str | None, client, today_count: int) -> tuple[str, list[Product]]:
+    if isinstance(client, tuple):  # APIの代わりの売れ筋リスト（curated）
+        return client
     if client is None:  # 試運転
         g = acct["genres"][0]
         raw = load_json(FIXTURE, {"Items": []})
@@ -121,7 +124,14 @@ def run_account(acct: dict, cfg: dict, now: datetime, secrets: Secrets, posted: 
     limit = cfg["event_mode"]["articles_per_day"] if event else cfg.get("articles_per_day", 1)
     if daily["articles"] < limit:
         client = None
-        if not dry_run:
+        curated_list = None
+        if not dry_run and not secrets.get("RAKUTEN_APP_ID"):
+            curated_list = curated.load(root, slug, secrets.get("RAKUTEN_AFFILIATE_ID"), acct["genres"][0]["name"])
+            if not curated_list:
+                print(f"[{slug}] 楽天APIの鍵も売れ筋リストも無いので、記事は作りません")
+                return True
+            client = curated_list
+        elif not dry_run:
             try:
                 client = RakutenClient(secrets.get("RAKUTEN_APP_ID"), secrets.get("RAKUTEN_ACCESS_KEY"),
                                        secrets.get("RAKUTEN_AFFILIATE_ID"), site_root_url)
@@ -134,7 +144,7 @@ def run_account(acct: dict, cfg: dict, now: datetime, secrets: Secrets, posted: 
             print(f"[{slug}] {e}")
             return False
         chosen = pick_products(candidates, set(posted), cfg["items_per_article"],
-                               cfg["min_review_count"], cfg["min_review_average"])
+                               cfg["min_review_count"], 0 if curated_list else cfg["min_review_average"])
         if len(chosen) < 2:
             print(f"[{slug}] 「{theme}」で紹介できる新しい商品が足りないので、今回は記事を作りません")
         else:
@@ -202,8 +212,10 @@ def run(dry_run: bool = False, run_all: bool = False, only: str | None = None) -
     posted = load_json(data_root / "posted_codes.json", {})  # 商品コード → 紹介したブランド（全ブランド共通）
 
     if not dry_run and not secrets.get("RAKUTEN_APP_ID"):
-        print("[main] 楽天の鍵がまだ入っていないので、今回は何もしません（設定待ち）")
-        return 0
+        if not (secrets.get("RAKUTEN_AFFILIATE_ID") and (root / "data" / "curated").exists()):
+            print("[main] 楽天の鍵がまだ入っていないので、今回は何もしません（設定待ち）")
+            return 0
+        print("[main] 楽天APIの代わりに、確認済みの売れ筋リストで動きます")
     due = [a for a in accounts if run_all or only or now.hour in a.get("run_hours", [])]
     if not due:
         print(f"[main] {now:%H}時に動くアカウントはありません")

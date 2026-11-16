@@ -131,3 +131,14 @@ def test_only_due_accounts_run(sandbox, monkeypatch):
     main.run(dry_run=True)
     dirs = [p.name for p in (sandbox / "preview_data").iterdir() if p.is_dir()]
     assert dirs == ["kitchen"]  # 8時は kitchen だけ
+
+
+def test_curated_products(tmp_path):
+    import json
+    from bot import curated
+    (tmp_path / "data" / "curated").mkdir(parents=True)
+    (tmp_path / "data" / "curated" / "x.json").write_text(json.dumps({"as_of": "2026-11-16", "items": [
+        {"rank": 4, "name": "テスト洗剤", "item_url": "https://item.rakuten.co.jp/shop/123/", "price": 990, "review_count": 50, "shop": "店"}]}), encoding="utf-8")
+    theme, items = curated.load(tmp_path, "x", "aaa.bbb")
+    assert items[0].code == "shop:123" and items[0].url.startswith("https://hb.afl.rakuten.co.jp/hgc/aaa.bbb/?pc=https%3A%2F%2Fitem")
+    assert items[0].review_average == 0
