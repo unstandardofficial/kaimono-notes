@@ -88,5 +88,95 @@
     "short_name": "防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっ"
    }
   ]
+ },
+ {
+  "slug": "20261117-1258",
+  "date": "2026-11-17T12:58:01+09:00",
+  "theme": "日用品雑貨",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている日用品雑貨 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の日用品雑貨の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "日本製 ホテルスタイルタオル ビッグフェイスタオ",
+     "point": "ランキングで6位に入っている商品です。レビュー118,235件が集まっていて、890円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "アタック抗菌EX つめかえ用(1590g×6個)",
+     "point": "ランキングで7位に入っている商品です。レビュー93件が集まっていて、6,171円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "BOS非常用臭わない袋トイレセット(4点セット・",
+     "point": "ランキングで12位に入っている商品です。レビュー548件が集まっていて、8,690円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "toucher-home:10000264",
+    "name": "日本製 ホテルスタイルタオル ビッグフェイスタオル",
+    "price": 890,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F10000264%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F10000264%2F",
+    "image": "",
+    "shop": "タオル直販店 ヒオリ",
+    "review_average": 0.0,
+    "review_count": 118235,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 6,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "日本製 ホテルスタイルタオル ビッグフェイスタオル"
+   },
+   {
+    "code": "rakuten24:4901301458117",
+    "name": "アタック抗菌EX つめかえ用(1590g×6個)",
+    "price": 6171,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4901301458117%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4901301458117%2F",
+    "image": "",
+    "shop": "楽天24",
+    "review_average": 0.0,
+    "review_count": 93,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 7,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "アタック抗菌EX つめかえ用(1590g×6個)"
+   },
+   {
+    "code": "bos-shop:bos-1353",
+    "name": "BOS非常用臭わない袋トイレセット(4点セット・100回分) 災",
+    "price": 8690,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbos-shop%2Fbos-1353%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fbos-shop%2Fbos-1353%2F",
+    "image": "",
+    "shop": "BOS-SHOP",
+    "review_average": 0.0,
+    "review_count": 548,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 12,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "BOS非常用臭わない袋トイレセット(4点セット・100回分) 災"
+   }
+  ]
  }
 ]
