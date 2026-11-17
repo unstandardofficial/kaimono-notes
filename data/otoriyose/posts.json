@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "20261117-2234",
+  "date": "2026-11-17T22:34:11+09:00",
+  "theme": "食品",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "越前かに問屋ますよね 年末早割 かにセット",
+     "point": "ランキングで4位に入っている商品です。レビュー46,771件が集まっていて、14,960円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "骨取りサバ切身 1kg 無塩or有塩",
+     "point": "ランキングで5位に入っている商品です。レビュー20,531件が集まっていて、2,490円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "生・ボイル・タラバ かにセット",
+     "point": "ランキングで6位に入っている商品です。レビュー26,148件が集まっていて、8,888円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "masuyone:130007",
+    "name": "越前かに問屋ますよね 年末早割 かにセット",
+    "price": 14960,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmasuyone%2F130007%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fmasuyone%2F130007%2F",
+    "image": "",
+    "shop": "越前かに問屋「ますよ",
+    "review_average": 0.0,
+    "review_count": 46771,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 4,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "越前かに問屋ますよね 年末早割 かにセット"
+   },
+   {
+    "code": "kouragumi:201175",
+    "name": "骨取りサバ切身 1kg 無塩or有塩",
+    "price": 2490,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F201175%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F201175%2F",
+    "image": "",
+    "shop": "越前かに職人甲羅組",
+    "review_average": 0.0,
+    "review_count": 20531,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 5,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "骨取りサバ切身 1kg 無塩or有塩"
+   },
+   {
+    "code": "kanidokoro:628",
+    "name": "生・ボイル・タラバ かにセット",
+    "price": 8888,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkanidokoro%2F628%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkanidokoro%2F628%2F",
+    "image": "",
+    "shop": "海鮮かに処",
+    "review_average": 0.0,
+    "review_count": 26148,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 6,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "生・ボイル・タラバ かにセット"
+   }
+  ]
+ }
+]
