@@ -178,5 +178,95 @@
     "short_name": "BOS非常用臭わない袋トイレセット(4点セット・100回分) 災"
    }
   ]
+ },
+ {
+  "slug": "20261118-0727",
+  "date": "2026-11-18T07:27:42+09:00",
+  "theme": "日用品雑貨",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている日用品雑貨 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の日用品雑貨の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "日本製 ホテルスタイルタオル スタンダード フェ",
+     "point": "ランキングで8位に入っている商品です。レビュー5,802件が集まっていて、2,600円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "アリエール 洗濯洗剤 液体 詰め替え(1950g",
+     "point": "ランキングで9位に入っている商品です。レビュー583件が集まっていて、8,602円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "業務用マルチクリーナー 500ml 掃除用 洗剤",
+     "point": "ランキングで16位に入っている商品です。レビュー110件が集まっていて、1,690円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "toucher-home:10000543",
+    "name": "日本製 ホテルスタイルタオル スタンダード フェイスタオル",
+    "price": 2600,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F10000543%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoucher-home%2F10000543%2F",
+    "image": "",
+    "shop": "タオル直販店 ヒオリ",
+    "review_average": 0.0,
+    "review_count": 5802,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 8,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "日本製 ホテルスタイルタオル スタンダード フェイスタオル"
+   },
+   {
+    "code": "rakuten24:405025",
+    "name": "アリエール 洗濯洗剤 液体 詰め替え(1950g×6セット) [",
+    "price": 8602,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F405025%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F405025%2F",
+    "image": "",
+    "shop": "楽天24",
+    "review_average": 0.0,
+    "review_count": 583,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 9,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "アリエール 洗濯洗剤 液体 詰め替え(1950g×6セット) ["
+   },
+   {
+    "code": "orbtech:a002",
+    "name": "業務用マルチクリーナー 500ml 掃除用 洗剤 清掃 キッチン",
+    "price": 1690,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Forbtech%2Fa002%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Forbtech%2Fa002%2F",
+    "image": "",
+    "shop": "オーブ・テック　楽天",
+    "review_average": 0.0,
+    "review_count": 110,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 16,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "業務用マルチクリーナー 500ml 掃除用 洗剤 清掃 キッチン"
+   }
+  ]
  }
 ]
