@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "20261118-2310",
+  "date": "2026-11-18T23:10:37+09:00",
+  "theme": "家電",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている家電 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の家電の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "QUADS スチーム加湿器 GLASS グラス ",
+     "point": "ランキングで4位に入っている商品です。レビュー550件が集まっていて、19,800円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "ブリタ ポット型浄水器用カートリッジ マクストラ",
+     "point": "ランキングで5位に入っている商品です。レビュー27,073件が集まっていて、8,630円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "レコルト スープメーカー 豆乳メーカー 全自動",
+     "point": "ランキングで6位に入っている商品です。レビュー705件が集まっていて、19,800円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "quads:qs549",
+    "name": "QUADS スチーム加湿器 GLASS グラス ガラスポッド式 大容量",
+    "price": 19800,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fquads%2Fqs549%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fquads%2Fqs549%2F",
+    "image": "",
+    "shop": "QUADS公式楽天市",
+    "review_average": 0.0,
+    "review_count": 550,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 4,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "QUADS スチーム加湿器 GLASS グラス ガラスポッド式 大容量"
+   },
+   {
+    "code": "brita:maxtraplus-8",
+    "name": "ブリタ ポット型浄水器用カートリッジ マクストラプロ 8個",
+    "price": 8630,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrita%2Fmaxtraplus-8%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrita%2Fmaxtraplus-8%2F",
+    "image": "",
+    "shop": "浄水器のブリタ公式",
+    "review_average": 0.0,
+    "review_count": 27073,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 5,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "ブリタ ポット型浄水器用カートリッジ マクストラプロ 8個"
+   },
+   {
+    "code": "roomy:win26feb09a01",
+    "name": "レコルト スープメーカー 豆乳メーカー 全自動",
+    "price": 19800,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin26feb09a01%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin26feb09a01%2F",
+    "image": "",
+    "shop": "インテリアショップ roomy",
+    "review_average": 0.0,
+    "review_count": 705,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 6,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "レコルト スープメーカー 豆乳メーカー 全自動"
+   }
+  ]
+ }
+]
