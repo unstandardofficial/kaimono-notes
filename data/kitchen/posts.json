@@ -88,5 +88,95 @@
     "short_name": "スターフィルター 換気扇フィルター レンジフードフィルター"
    }
   ]
+ },
+ {
+  "slug": "20261118-1329",
+  "date": "2026-11-18T13:29:31+09:00",
+  "theme": "キッチン用品",
+  "event": null,
+  "article": {
+   "title": "楽天で売れているキッチン用品 3選｜レビューが多い定番から",
+   "intro": "毎日使うものほど、ちょっとした使いやすさの差が気になりますよね。この記事では、楽天市場のキッチン用品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "sakuraku 水切りラック L型 旧タイプ ",
+     "point": "ランキングで11位に入っている商品です。レビュー189件が集まっていて、1,790円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "CAROTE カローテ フライパン セット12・",
+     "point": "ランキングで13位に入っている商品です。レビュー668件が集まっていて、3,680円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "透明 撥水 拭ける キッチンマット 厚さ1.5m",
+     "point": "ランキングで14位に入っている商品です。レビュー5,055件が集まっていて、1,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "kurashi-zakka:jin-603-1",
+    "name": "sakuraku 水切りラック L型 旧タイプ 折りたたみ",
+    "price": 1790,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-zakka%2Fjin-603-1%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-zakka%2Fjin-603-1%2F",
+    "image": "",
+    "shop": "くらしの雑貨屋さん",
+    "review_average": 0.0,
+    "review_count": 189,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 11,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "sakuraku 水切りラック L型 旧タイプ 折りたたみ"
+   },
+   {
+    "code": "cookware-carote:j08886",
+    "name": "CAROTE カローテ フライパン セット12・9・8・4点 I",
+    "price": 3680,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookware-carote%2Fj08886%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fcookware-carote%2Fj08886%2F",
+    "image": "",
+    "shop": "CAROTEキッチン",
+    "review_average": 0.0,
+    "review_count": 668,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 13,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "CAROTE カローテ フライパン セット12・9・8・4点 I"
+   },
+   {
+    "code": "next-online:10000304",
+    "name": "透明 撥水 拭ける キッチンマット 厚さ1.5mm 防カビ 防水",
+    "price": 1980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2F10000304%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2F10000304%2F",
+    "image": "",
+    "shop": "Nextオンライン",
+    "review_average": 0.0,
+    "review_count": 5055,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 14,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "透明 撥水 拭ける キッチンマット 厚さ1.5mm 防カビ 防水"
+   }
+  ]
  }
 ]
