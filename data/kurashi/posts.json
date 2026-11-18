@@ -268,5 +268,95 @@
     "short_name": "業務用マルチクリーナー 500ml 掃除用 洗剤 清掃 キッチン"
    }
   ]
+ },
+ {
+  "slug": "20261119-0703",
+  "date": "2026-11-19T07:03:52+09:00",
+  "theme": "日用品雑貨",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている日用品雑貨 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の日用品雑貨の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "ハミングフレア 柔軟剤 つめかえ用 梱販売用(4",
+     "point": "ランキングで10位に入っている商品です。レビュー1,648件が集まっていて、5,243円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "簡易トイレ 非常用トイレ 防災グッズ 防災 非常",
+     "point": "ランキングで17位に入っている商品です。レビュー10,980件が集まっていて、1,180円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "楽天総合1位 簡易トイレ 非常用トイレセット 防",
+     "point": "ランキングで20位に入っている商品です。レビュー7,315件が集まっていて、1,580円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "rakuten24:404953",
+    "name": "ハミングフレア 柔軟剤 つめかえ用 梱販売用(4袋入)",
+    "price": 5243,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404953%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404953%2F",
+    "image": "",
+    "shop": "楽天24",
+    "review_average": 0.0,
+    "review_count": 1648,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 10,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "ハミングフレア 柔軟剤 つめかえ用 梱販売用(4袋入)"
+   },
+   {
+    "code": "h2brothers:portabletoilet01",
+    "name": "簡易トイレ 非常用トイレ 防災グッズ 防災 非常用簡易トイレ 携",
+    "price": 1180,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fh2brothers%2Fportabletoilet01%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fh2brothers%2Fportabletoilet01%2F",
+    "image": "",
+    "shop": "ONE STEP",
+    "review_average": 0.0,
+    "review_count": 10980,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 17,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "簡易トイレ 非常用トイレ 防災グッズ 防災 非常用簡易トイレ 携"
+   },
+   {
+    "code": "hiromifashionhouse:mkhrm60f",
+    "name": "楽天総合1位 簡易トイレ 非常用トイレセット 防災トイレ 防災備",
+    "price": 1580,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiromifashionhouse%2Fmkhrm60f%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiromifashionhouse%2Fmkhrm60f%2F",
+    "image": "",
+    "shop": "Hiromi Fas",
+    "review_average": 0.0,
+    "review_count": 7315,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 20,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "楽天総合1位 簡易トイレ 非常用トイレセット 防災トイレ 防災備"
+   }
+  ]
  }
 ]
