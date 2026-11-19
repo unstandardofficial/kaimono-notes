@@ -358,5 +358,95 @@
     "short_name": "楽天総合1位 簡易トイレ 非常用トイレセット 防災トイレ 防災備"
    }
   ]
+ },
+ {
+  "slug": "20261120-0714",
+  "date": "2026-11-20T07:14:10+09:00",
+  "theme": "日用品雑貨",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている日用品雑貨 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の日用品雑貨の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "アタックZERO 洗濯洗剤 詰替用(1460g×",
+     "point": "ランキングで14位に入っている商品です。レビュー1,359件が集まっていて、10,794円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "サンサンスポンジ 4個セット 全9色 キッチンス",
+     "point": "ランキングで21位に入っている商品です。レビュー18,029件が集まっていて、1,584円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "再生紙トイレット12RW 108mm幅トイレ",
+     "point": "ランキングで23位に入っている商品です。レビュー3,736件が集まっていて、3,200円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "rakuten24:404888",
+    "name": "アタックZERO 洗濯洗剤 詰替用(1460g×6個入)",
+    "price": 10794,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404888%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404888%2F",
+    "image": "",
+    "shop": "楽天24",
+    "review_average": 0.0,
+    "review_count": 1359,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 14,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "アタックZERO 洗濯洗剤 詰替用(1460g×6個入)"
+   },
+   {
+    "code": "dainichi-corp:10000017",
+    "name": "サンサンスポンジ 4個セット 全9色 キッチンスポンジ 長持ち",
+    "price": 1584,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdainichi-corp%2F10000017%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fdainichi-corp%2F10000017%2F",
+    "image": "",
+    "shop": "ダイニチ楽天市場店",
+    "review_average": 0.0,
+    "review_count": 18029,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 21,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "サンサンスポンジ 4個セット 全9色 キッチンスポンジ 長持ち"
+   },
+   {
+    "code": "coming:jun1kyuhinrolls-recycle12rw",
+    "name": "再生紙トイレット12RW 108mm幅トイレ",
+    "price": 3200,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoming%2Fjun1kyuhinrolls-recycle12rw%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoming%2Fjun1kyuhinrolls-recycle12rw%2F",
+    "image": "",
+    "shop": "カミングネット株式会",
+    "review_average": 0.0,
+    "review_count": 3736,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 23,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "再生紙トイレット12RW 108mm幅トイレ"
+   }
+  ]
  }
 ]
