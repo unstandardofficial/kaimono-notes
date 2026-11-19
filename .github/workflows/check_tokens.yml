@@ -1,0 +1,28 @@
+name: check-threads-tokens
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: トークン確認（値は出力しない）
+        env:
+          T_KURASHI: ${{ secrets.THREADS_ACCESS_TOKEN_KURASHI }}
+          T_KITCHEN: ${{ secrets.THREADS_ACCESS_TOKEN_KITCHEN }}
+          T_KOSODATE: ${{ secrets.THREADS_ACCESS_TOKEN_KOSODATE }}
+          T_OTORIYOSE: ${{ secrets.THREADS_ACCESS_TOKEN_OTORIYOSE }}
+          T_GADGET: ${{ secrets.THREADS_ACCESS_TOKEN_GADGET }}
+        run: |
+          for n in KURASHI KITCHEN KOSODATE OTORIYOSE GADGET; do
+            v="T_$n"; t="${!v}"
+            if [ -z "$t" ]; then echo "$n: 未設定"; continue; fi
+            me=$(curl -s "https://graph.threads.net/v1.0/me?fields=username&access_token=$t" | python3 -c 'import sys,json; d=json.load(sys.stdin); print(d.get("username") or ("エラー:"+str(d.get("error",{}).get("message","?"))[:80]))')
+            ins=$(curl -s "https://graph.threads.net/v1.0/me/threads_insights?metric=views&period=day&access_token=$t" | python3 -c 'import sys,json; d=json.load(sys.stdin); print("OK" if "data" in d else "NG:"+str(d.get("error",{}).get("message","?"))[:80])')
+            echo "$n: アカウント=$me / 表示数取得=$ins"
+          done
