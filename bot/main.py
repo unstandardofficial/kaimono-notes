@@ -166,7 +166,7 @@ def run_account(acct: dict, cfg: dict, now: datetime, secrets: Secrets, posted: 
                                            "x", 1, event, voice, acct["site"].get("angles", ""))
             if ch["threads"]["enabled"]:
                 texts = write_social(article, chosen, url, "threads", 3, event, voice, acct["site"].get("angles", ""))
-                queue["threads"] += [{"text": t, "image": chosen[i % len(chosen)].image} for i, t in enumerate(texts)]
+                queue["threads"] += [{**t, "image": chosen[i % len(chosen)].image} for i, t in enumerate(texts)]
             print(f"[{slug}] 記事: {article['title']} → {url}")
 
     # ブログは毎回作り直す（商品一覧・商品ページも）
@@ -192,7 +192,17 @@ def run_account(acct: dict, cfg: dict, now: datetime, secrets: Secrets, posted: 
         item = queue["threads"].pop(0)
         try:
             token, user = secrets.get("THREADS_ACCESS_TOKEN", slug), secrets.get("THREADS_USER_ID", slug) or "me"
-            print(f"[{slug}] Threads: {post_threads(item['text'], item.get('image'), token, user) if not dry_run else '(試運転)'}\n{item['text']}")
+            if dry_run:
+                print(f"[{slug}] Threads(試運転):\n{item['text']}\n--- 返信 ---\n{item.get('reply', '')}")
+            else:
+                main_id = post_threads(item["text"], item.get("image"), token, user)
+                print(f"[{slug}] Threads: {main_id}\n{item['text']}")
+                if item.get("reply"):  # リンクは自分への返信に置く（1投稿目はリンクなし）
+                    try:
+                        rid = post_threads(item["reply"], None, token, user, extra={"reply_to_id": main_id})
+                        print(f"[{slug}] Threads返信: {rid}")
+                    except SocialError as e:  # 1投稿目は出ているので、返信だけ失敗しても再投稿はしない
+                        print(f"[{slug}] 返信の投稿に失敗（1投稿目 {main_id}）: {e}")
             daily["threads"] += 1
         except SocialError as e:
             print(f"[{slug}] {e}")

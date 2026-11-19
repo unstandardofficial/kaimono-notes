@@ -55,7 +55,10 @@ def test_template_article_and_social_have_pr_and_fit():
     for t in write_social(art, ps, url, "x", 1, None):
         assert t.startswith("【PR】") and t.endswith(url) and len(t) <= 130
     th = write_social(art, ps, url, "threads", 3, "楽天ブラックフライデー")
-    assert len(th) == 3 and all(t.startswith("【PR】") and len(t) <= 500 for t in th)
+    assert len(th) == 3
+    for t in th:  # 1投稿目は【PR】付きでリンクなし、返信にURLとPR
+        assert t["text"].startswith("【PR】") and url not in t["text"] and len(t["text"]) <= 500
+        assert url in t["reply"] and t["reply"].endswith("PR") and len(t["reply"]) <= 500
 
 
 def test_post_page_has_disclosure_credit_and_sponsored_links(tmp_path):

@@ -21,7 +21,9 @@ RULES = """守ること:
 - 健康・美容の商品で「治る」「痩せる」「効く」など効果効能を断定しない（薬機法・景品表示法）
 - 「最安」「絶対」「必ず」などの断定、価格がずっと続くような表現は使わない
 - 煽りすぎず、読んだ人の暮らしの困りごとから入る
-- ハッシュタグは使わないか、使っても1つまで"""
+- ハッシュタグは使わないか、使っても1つまで
+- 複数の商品を比べるときは、どれも否定しない。「〇〇重視ならA、△△重視ならB」と、良い面どうしで比べる。勝ち負け・「イマイチ」などは書かない
+- 実在しない人物や家族構成を名乗らない。中の人の体験は、商品データに「実際に使っている」とある場合だけ書いてよい"""
 
 
 # 調べた「伸びている投稿の型」（スプレッドシート「SNS×ジャンル別 伸びている投稿の型と改善版」）
@@ -31,7 +33,9 @@ THREADS_STYLE = """Threads用。1本ごとに次の型を順番に1つずつ使�
  3) 保存されるメモ: 「〇〇な人へ」→買う前に確認したい点（□で3〜4個）→「保存しておくと次の買い物で迷いません」
  4) 質問: 「AとB、どっち派ですか？」のように答えやすい二択で締める
 1行目で手を止めさせ、2段落目でレビュー件数・平均評価・価格・送料などの数字を出す。
-最後の行は記事への誘導（「比較はこちら👇」など）。URLは自分で書かない（後から付ける）"""
+1本は「1投稿目」と「自分への返信」の2つに分ける:
+ - main（1投稿目）: リンクも商品名の連呼もしない。驚き・あるある・気持ちから入る2〜5行。最後は問いかけか、続きは返信へ、で終える
+ - reply（返信）: 価格・レビュー件数などの数字を1〜2行、選び方のひとことで締める。URLとPRは自分で書かない（後から付ける）"""
 X_STYLE = """X用。1文目に「〇〇は△△で選ぶと失敗しにくい」のような選び方の結論、2文目に「楽天の売れ筋3つを□□で比べました」。
 数字（寸法・容量・枚数・価格のどれか）を1つ入れる。URLは自分で書かない（後から付ける）"""
 
@@ -130,29 +134,47 @@ def _template_article(products: list[Product], theme: str, event: str | None) ->
 
 
 def write_social(article: dict, products: list[Product], url: str, platform: str,
-                 n: int, event: str | None, voice: str = "", angles: str = "") -> list[str]:
-    """SNS投稿文を n 本作る。すべて先頭に【PR】を付ける。"""
-    limit = 130 if platform == "x" else 450
+                 n: int, event: str | None, voice: str = "", angles: str = "") -> list:
+    """SNS投稿文を n 本作る。
+    X: 文字列のリスト（先頭に【PR】、末尾にURL）。
+    Threads: {"text": 1投稿目（【PR】付き・リンクなし）, "reply": 返信（数字＋URL＋PR）} のリスト。"""
+    threads = platform != "x"
+    limit = 130 if not threads else 450
     briefs = "\n".join(_product_brief(i + 1, p) for i, p in enumerate(products))
-    style = (X_STYLE if platform == "x" else THREADS_STYLE) + (f"\nこのブランドで効く切り口: {angles}" if angles else "")
+    style = (THREADS_STYLE if threads else X_STYLE) + (f"\nこのブランドで効く切り口: {angles}" if angles else "")
+    shape = ('{"posts": [{"main": "...", "reply": "..."}, ...]}' if threads else '{"posts": ["...", "..."]}')
     prompt = f"""ブログ記事「{article['title']}」を紹介するSNS投稿を{n}本、それぞれ別の切り口で書いてください。
 {style}
 アカウントの読者と口調: {voice or '日用品を探している人に向けた、親しみやすい口調'}
 {('今は' + event + 'の時期。') if event else ''}
 {RULES}
-- 1本あたり{limit - 10}文字以内。先頭の【PR】は自分で書かない（後から付ける）
+- 1本あたり{(200 if threads else limit - 10)}文字以内。先頭の【PR】は自分で書かない（後から付ける）
 商品:
 {briefs}
-JSONで {{"posts": ["...", "..."]}} だけを出力してください。"""
+JSONで {shape} だけを出力してください。"""
     data = _extract_json(_ai(prompt, 1500) or "")
-    posts = [s.strip() for s in (data or {}).get("posts", []) if isinstance(s, str) and s.strip()]
-    if len(posts) < n:
-        posts += _template_social(products, n - len(posts), event)
+    raw = (data or {}).get("posts", [])
+    if not threads:
+        posts = [s.strip() for s in raw if isinstance(s, str) and s.strip()]
+        if len(posts) < n:
+            posts += _template_social(products, n - len(posts), event)
+        out = []
+        for body in posts[:n]:
+            room = limit - len("【PR】\n") - (24 if url else 0)
+            out.append(f"【PR】{body[:room]}" + (f"\n{url}" if url else ""))
+        return out
+    pairs = []
+    for it in raw:
+        if isinstance(it, dict) and str(it.get("main", "")).strip() and str(it.get("reply", "")).strip():
+            pairs.append((it["main"].strip(), it["reply"].strip()))
+        elif isinstance(it, str) and it.strip():
+            pairs.append((it.strip(), "詳しい比較はこちら"))
+    for body in _template_social(products, max(0, n - len(pairs)), event):
+        pairs.append(("これ、気になってた人いませんか？", body))
     out = []
-    for body in posts[:n]:
-        room = limit - len("【PR】\n") - (24 if url else 0)
-        body = body[:room]
-        out.append(f"【PR】{body}" + (f"\n{url}" if url else ""))
+    for main, reply in pairs[:n]:
+        tail = (f"\n{url}" if url else "") + "\nPR"
+        out.append({"text": f"【PR】\n{main[:400]}", "reply": reply[:480 - len(tail)] + tail})
     return out
 
 
