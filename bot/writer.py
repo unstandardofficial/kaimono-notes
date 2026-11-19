@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+from pathlib import Path
 import random
 import re
 
@@ -38,6 +39,16 @@ THREADS_STYLE = """Threads用。1本ごとに次の型を順番に1つずつ使�
  - reply（返信）: 価格・レビュー件数などの数字を1〜2行、選び方のひとことで締める。URLとPRは自分で書かない（後から付ける）"""
 X_STYLE = """X用。1文目に「〇〇は△△で選ぶと失敗しにくい」のような選び方の結論、2文目に「楽天の売れ筋3つを□□で比べました」。
 数字（寸法・容量・枚数・価格のどれか）を1つ入れる。URLは自分で書かない（後から付ける）"""
+
+
+def style_notes() -> str:
+    """data/style_notes.md（伸びた投稿の研究から出た、守るとよい型）を読み込む。共有された良い投稿をここに反映する。"""
+    f = Path(__file__).resolve().parent.parent / "data" / "style_notes.md"
+    try:
+        t = f.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
+    return ("\n伸びた投稿の研究から（できるだけ取り入れる）:\n" + t) if t else ""
 
 
 def _yen(n: int) -> str:
@@ -137,11 +148,11 @@ def write_social(article: dict, products: list[Product], url: str, platform: str
                  n: int, event: str | None, voice: str = "", angles: str = "") -> list:
     """SNS投稿文を n 本作る。
     X: 文字列のリスト（先頭に【PR】、末尾にURL）。
-    Threads: {"text": 1投稿目（【PR】付き・リンクなし）, "reply": 返信（数字＋URL＋PR）} のリスト。"""
+    Threads: {"text": 1投稿目（末尾に【PR】・リンクなし）, "reply": 返信（数字＋URL＋PR）} のリスト。"""
     threads = platform != "x"
     limit = 130 if not threads else 450
     briefs = "\n".join(_product_brief(i + 1, p) for i, p in enumerate(products))
-    style = (THREADS_STYLE if threads else X_STYLE) + (f"\nこのブランドで効く切り口: {angles}" if angles else "")
+    style = (THREADS_STYLE + style_notes() if threads else X_STYLE) + (f"\nこのブランドで効く切り口: {angles}" if angles else "")
     shape = ('{"posts": [{"main": "...", "reply": "..."}, ...]}' if threads else '{"posts": ["...", "..."]}')
     prompt = f"""ブログ記事「{article['title']}」を紹介するSNS投稿を{n}本、それぞれ別の切り口で書いてください。
 {style}
@@ -174,7 +185,7 @@ JSONで {shape} だけを出力してください。"""
     out = []
     for main, reply in pairs[:n]:
         tail = (f"\n{url}" if url else "") + "\nPR"
-        out.append({"text": f"【PR】\n{main[:400]}", "reply": reply[:480 - len(tail)] + tail})
+        out.append({"text": f"{main[:400]}\n【PR】", "reply": reply[:480 - len(tail)] + tail})
     return out
 
 

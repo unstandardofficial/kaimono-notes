@@ -104,7 +104,7 @@ def run(slug: str) -> None:
     if not (out / "sale_templates.json").exists():
         tpl = ai_json(MID, f"{brief}\n\n楽天の大型セール中（ブラックフライデー、スーパーSALE、初売り）に出すThreads投稿の型を、"
                       "セールごとに5本ずつ。商品は【商品名】【価格】【レビュー件数】【平均評価】【1回あたり】のように差し込み枠で書く。"
-                      "冒頭に【PR】。セールの日程・割引率は書かない（当日に事実を入れる）。"
+                      "末尾に【PR】。セールの日程・割引率は書かない（当日に事実を入れる）。"
                       f'形式：{{"blackfriday":["..."],"supersale":["..."],"hatsuuri":["..."]}}\n\n{RULES}\n{EXTRA}', 6000)
         save("sale_templates.json", tpl)
     # ④ カルーセル台本
