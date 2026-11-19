@@ -88,5 +88,95 @@
     "short_name": "生・ボイル・タラバ かにセット"
    }
   ]
+ },
+ {
+  "slug": "20261119-2223",
+  "date": "2026-11-19T22:23:42+09:00",
+  "theme": "食品",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "令和8年産 70％以上使用 国産ブレンド米 極味",
+     "point": "ランキングで7位に入っている商品です。レビュー6,687件が集まっていて、3,580円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "かに ポーション 1kg ずわい蟹 ズワイガニ",
+     "point": "ランキングで8位に入っている商品です。レビュー4,866件が集まっていて、5,680円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "甲羅組 訳あり 海鮮セット",
+     "point": "ランキングで9位に入っている商品です。レビュー19,955件が集まっていて、3,999円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "yama-oatmeal-institute:kiwamiseimai10",
+    "name": "令和8年産 70％以上使用 国産ブレンド米 極味精米",
+    "price": 3580,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyama-oatmeal-institute%2Fkiwamiseimai10%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fyama-oatmeal-institute%2Fkiwamiseimai10%2F",
+    "image": "",
+    "shop": "山川食糧オートミール",
+    "review_average": 0.0,
+    "review_count": 6687,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 7,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "令和8年産 70％以上使用 国産ブレンド米 極味精米"
+   },
+   {
+    "code": "morigen:zuwai-02",
+    "name": "かに ポーション 1kg ずわい蟹 ズワイガニ",
+    "price": 5680,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorigen%2Fzuwai-02%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fmorigen%2Fzuwai-02%2F",
+    "image": "",
+    "shop": "食の達人森源商店",
+    "review_average": 0.0,
+    "review_count": 4866,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 8,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "かに ポーション 1kg ずわい蟹 ズワイガニ"
+   },
+   {
+    "code": "kouragumi:200002",
+    "name": "甲羅組 訳あり 海鮮セット",
+    "price": 3999,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200002%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200002%2F",
+    "image": "",
+    "shop": "越前かに職人甲羅組",
+    "review_average": 0.0,
+    "review_count": 19955,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 9,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "甲羅組 訳あり 海鮮セット"
+   }
+  ]
  }
 ]

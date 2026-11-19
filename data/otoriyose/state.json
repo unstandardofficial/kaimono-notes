@@ -4,10 +4,26 @@
    "articles": 1,
    "x": 0,
    "threads": 0
+  },
+  "2026-11-19": {
+   "articles": 1,
+   "x": 0,
+   "threads": 1
   }
  },
  "queue": {
   "x": [],
-  "threads": []
+  "threads": [
+   {
+    "text": "これ、気になってた人いませんか？\n【PR】",
+    "reply": "レビューが多くて安心な一品。甲羅組 訳あり 海鮮セットは19,955件のレビュー。3,999円。楽天ブラックフライデーのまとめ買いにも。\nhttps://unstandardofficial.github.io/kaimono-notes/otoriyose/posts/20261119-2223.html\nPR",
+    "image": ""
+   },
+   {
+    "text": "これ、気になってた人いませんか？\n【PR】",
+    "reply": "レビューが多くて安心な一品。令和8年産 70％以上使用 国産ブレンド米 極味精米は6,687件のレビュー。3,580円。楽天ブラックフライデーのまとめ買いにも。\nhttps://unstandardofficial.github.io/kaimono-notes/otoriyose/posts/20261119-2223.html\nPR",
+    "image": ""
+   }
+  ]
  }
 }
