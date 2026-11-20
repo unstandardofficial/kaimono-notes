@@ -178,5 +178,95 @@
     "short_name": "甲羅組 訳あり 海鮮セット"
    }
   ]
+ },
+ {
+  "slug": "20261120-2203",
+  "date": "2026-11-20T22:03:40+09:00",
+  "theme": "食品",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "毎日使うものほど、ちょっとした使いやすさの差が気になりますよね。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "北海道産 訳あり 割れ・不揃い",
+     "point": "ランキングで10位に入っている商品です。レビュー15,142件が集まっていて、4,999円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "おせち 早割 博多久松 2027 4〜5人前",
+     "point": "ランキングで11位に入っている商品です。レビュー22,991件が集まっていて、16,500円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "リンガーハット 長崎ちゃんぽん 8食 冷凍",
+     "point": "ランキングで12位に入っている商品です。レビュー4,002件が集まっていて、3,900円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "kouragumi:200240",
+    "name": "北海道産 訳あり 割れ・不揃い",
+    "price": 4999,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200240%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F200240%2F",
+    "image": "",
+    "shop": "越前かに職人甲羅組",
+    "review_average": 0.0,
+    "review_count": 15142,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 10,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "北海道産 訳あり 割れ・不揃い"
+   },
+   {
+    "code": "hisamatsu:2009hakata",
+    "name": "おせち 早割 博多久松 2027 4〜5人前",
+    "price": 16500,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhisamatsu%2F2009hakata%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fhisamatsu%2F2009hakata%2F",
+    "image": "",
+    "shop": "博多久松",
+    "review_average": 0.0,
+    "review_count": 22991,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 11,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "おせち 早割 博多久松 2027 4〜5人前"
+   },
+   {
+    "code": "ringerhut:c128",
+    "name": "リンガーハット 長崎ちゃんぽん 8食 冷凍",
+    "price": 3900,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fringerhut%2Fc128%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fringerhut%2Fc128%2F",
+    "image": "",
+    "shop": "リンガーハット楽天市",
+    "review_average": 0.0,
+    "review_count": 4002,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 12,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "リンガーハット 長崎ちゃんぽん 8食 冷凍"
+   }
+  ]
  }
 ]
