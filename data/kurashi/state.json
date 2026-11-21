@@ -24,16 +24,15 @@
    "articles": 1,
    "x": 0,
    "threads": 2
+  },
+  "2026-11-21": {
+   "articles": 0,
+   "x": 0,
+   "threads": 1
   }
  },
  "queue": {
   "x": [],
-  "threads": [
-   {
-    "text": "これ、気になってた人いませんか？\n【PR】",
-    "reply": "レビューが多くて安心な一品。再生紙トイレット12RW 108mm幅トイレは3,736件のレビュー。3,200円。楽天ブラックフライデーのまとめ買いにも。\nhttps://unstandardofficial.github.io/kaimono-notes/kurashi/posts/20261120-0714.html\nPR",
-    "image": ""
-   }
-  ]
+  "threads": []
  }
 }
