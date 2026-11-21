@@ -268,5 +268,95 @@
     "short_name": "リンガーハット 長崎ちゃんぽん 8食 冷凍"
    }
   ]
+ },
+ {
+  "slug": "20261121-1129",
+  "date": "2026-11-21T11:29:41+09:00",
+  "theme": "食品",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "塩さば「有塩or無塩」「骨ありor骨なし」選べる",
+     "point": "ランキングで13位に入っている商品です。レビュー5,732件が集まっていて、2,990円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "令和8年 新米 コシヒカリ ヒノヒカリ ブレンド",
+     "point": "ランキングで14位に入っている商品です。レビュー821件が集まっていて、2,380円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "特大タラバ蟹 1kg〜5kg",
+     "point": "ランキングで15位に入っている商品です。レビュー24,419件が集まっていて、10,800円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "kouragumi:210069",
+    "name": "塩さば「有塩or無塩」「骨ありor骨なし」選べる",
+    "price": 2990,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F210069%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F210069%2F",
+    "image": "",
+    "shop": "越前かに職人甲羅組",
+    "review_average": 0.0,
+    "review_count": 5732,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 13,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "塩さば「有塩or無塩」「骨ありor骨なし」選べる"
+   },
+   {
+    "code": "yama-oatmeal-institute:yumesizuku10-5kgx2",
+    "name": "令和8年 新米 コシヒカリ ヒノヒカリ ブレンド 10kg",
+    "price": 2380,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyama-oatmeal-institute%2Fyumesizuku10-5kgx2%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fyama-oatmeal-institute%2Fyumesizuku10-5kgx2%2F",
+    "image": "",
+    "shop": "山川食糧オートミール",
+    "review_average": 0.0,
+    "review_count": 821,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 14,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "令和8年 新米 コシヒカリ ヒノヒカリ ブレンド 10kg"
+   },
+   {
+    "code": "sfd-ymt:869808",
+    "name": "特大タラバ蟹 1kg〜5kg",
+    "price": 10800,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsfd-ymt%2F869808%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fsfd-ymt%2F869808%2F",
+    "image": "",
+    "shop": "海の幸なのにYAMA",
+    "review_average": 0.0,
+    "review_count": 24419,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 15,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "特大タラバ蟹 1kg〜5kg"
+   }
+  ]
  }
 ]
