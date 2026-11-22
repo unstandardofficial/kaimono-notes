@@ -358,5 +358,95 @@
     "short_name": "特大タラバ蟹 1kg〜5kg"
    }
   ]
+ },
+ {
+  "slug": "20261122-1704",
+  "date": "2026-11-22T17:04:16+09:00",
+  "theme": "食品",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "おせち 早割 2027 冷蔵 千賀屋謹製 おもて",
+     "point": "ランキングで17位に入っている商品です。レビュー3,795件が集まっていて、16,880円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "8年産米 会津CROPS 無洗米",
+     "point": "ランキングで18位に入っている商品です。レビュー9,237件が集まっていて、2,799円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "みかん 訳あり 1.2kg 送料無料 熊本県産 ",
+     "point": "ランキングで19位に入っている商品です。レビュー4,084件が集まっていて、999円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "omosan:7006",
+    "name": "おせち 早割 2027 冷蔵 千賀屋謹製 おもてなし 和風",
+    "price": 16880,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fomosan%2F7006%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fomosan%2F7006%2F",
+    "image": "",
+    "shop": "おもてなし参道",
+    "review_average": 0.0,
+    "review_count": 3795,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 17,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "おせち 早割 2027 冷蔵 千賀屋謹製 おもてなし 和風"
+   },
+   {
+    "code": "jcrops:4562129938344-2",
+    "name": "8年産米 会津CROPS 無洗米",
+    "price": 2799,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjcrops%2F4562129938344-2%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fjcrops%2F4562129938344-2%2F",
+    "image": "",
+    "shop": "会津CROPS米直販",
+    "review_average": 0.0,
+    "review_count": 9237,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 18,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "8年産米 会津CROPS 無洗米"
+   },
+   {
+    "code": "kumamoto-food:10003935",
+    "name": "みかん 訳あり 1.2kg 送料無料 熊本県産 不選別",
+    "price": 999,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumamoto-food%2F10003935%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumamoto-food%2F10003935%2F",
+    "image": "",
+    "shop": "くまもと風土",
+    "review_average": 0.0,
+    "review_count": 4084,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 19,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "みかん 訳あり 1.2kg 送料無料 熊本県産 不選別"
+   }
+  ]
  }
 ]
