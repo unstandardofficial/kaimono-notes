@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "20261122-0923",
+  "date": "2026-11-22T09:23:33+09:00",
+  "theme": "キッズ・ベビー・マタニティ",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れているキッズ・ベビー・マタニティ 3選｜レビューが多い定番から",
+   "intro": "毎日使うものほど、ちょっとした使いやすさの差が気になりますよね。この記事では、楽天市場のキッズ・ベビー・マタニティの売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "ムーニーマン パンツ 男女 L・BIGサイズ 大",
+     "point": "ランキングで4位に入っている商品です。レビュー1,556件が集まっていて、9,196円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "スリーパー フランネル ボア or ガーゼ 選べ",
+     "point": "ランキングで10位に入っている商品です。レビュー1,380件が集まっていて、2,490円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "キッズ パジャマ 長袖 冬 ルームウェア 上下セ",
+     "point": "ランキングで12位に入っている商品です。レビュー49件が集まっていて、1,590円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "netbaby:404937",
+    "name": "ムーニーマン パンツ 男女 L・BIGサイズ 大容量(4袋セット)",
+    "price": 9196,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F404937%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F404937%2F",
+    "image": "",
+    "shop": "楽天24 ベビー館",
+    "review_average": 0.0,
+    "review_count": 1556,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 4,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "ムーニーマン パンツ 男女 L・BIGサイズ 大容量(4袋セット)"
+   },
+   {
+    "code": "ponopono:303005",
+    "name": "スリーパー フランネル ボア or ガーゼ 選べる 袖あり 袖なし",
+    "price": 2490,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fponopono%2F303005%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fponopono%2F303005%2F",
+    "image": "",
+    "shop": "PUPPAPUPO",
+    "review_average": 0.0,
+    "review_count": 1380,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 10,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "スリーパー フランネル ボア or ガーゼ 選べる 袖あり 袖なし"
+   },
+   {
+    "code": "darkangel:st2606-5552",
+    "name": "キッズ パジャマ 長袖 冬 ルームウェア 上下セット",
+    "price": 1590,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdarkangel%2Fst2606-5552%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fdarkangel%2Fst2606-5552%2F",
+    "image": "",
+    "shop": "Dark Angel",
+    "review_average": 0.0,
+    "review_count": 49,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 12,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "キッズ パジャマ 長袖 冬 ルームウェア 上下セット"
+   }
+  ]
+ }
+]
