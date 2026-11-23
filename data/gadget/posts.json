@@ -88,5 +88,95 @@
     "short_name": "レコルト スープメーカー 豆乳メーカー 全自動"
    }
   ]
+ },
+ {
+  "slug": "20261123-2349",
+  "date": "2026-11-23T23:49:43+09:00",
+  "theme": "家電",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている家電 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の家電の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "COSORI DCモーター搭載 ノンフライヤー ",
+     "point": "ランキングで7位に入っている商品です。レビュー877件が集まっていて、19,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "電気毛布 掛け敷き 洗える ふわとろ毛布",
+     "point": "ランキングで8位に入っている商品です。レビュー3,518件が集まっていて、8,900円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "レコルト 自動調理ポット ラージ RSY-3",
+     "point": "ランキングで9位に入っている商品です。レビュー544件が集まっていて、19,800円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "vesync:kaapafcsnjp0106y",
+    "name": "COSORI DCモーター搭載 ノンフライヤー 6L 大容量",
+    "price": 19980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvesync%2Fkaapafcsnjp0106y%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fvesync%2Fkaapafcsnjp0106y%2F",
+    "image": "",
+    "shop": "Vesync公式 楽天",
+    "review_average": 0.0,
+    "review_count": 877,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 7,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "COSORI DCモーター搭載 ノンフライヤー 6L 大容量"
+   },
+   {
+    "code": "mpowjapan:gfeb013000",
+    "name": "電気毛布 掛け敷き 洗える ふわとろ毛布",
+    "price": 8900,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmpowjapan%2Fgfeb013000%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fmpowjapan%2Fgfeb013000%2F",
+    "image": "",
+    "shop": "エムパウジャパン楽天",
+    "review_average": 0.0,
+    "review_count": 3518,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 8,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "電気毛布 掛け敷き 洗える ふわとろ毛布"
+   },
+   {
+    "code": "plywood:20149424",
+    "name": "レコルト 自動調理ポット ラージ RSY-3",
+    "price": 19800,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplywood%2F20149424%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fplywood%2F20149424%2F",
+    "image": "",
+    "shop": "plywood キッチン",
+    "review_average": 0.0,
+    "review_count": 544,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 9,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "レコルト 自動調理ポット ラージ RSY-3"
+   }
+  ]
  }
 ]
