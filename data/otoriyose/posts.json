@@ -448,5 +448,95 @@
     "short_name": "みかん 訳あり 1.2kg 送料無料 熊本県産 不選別"
    }
   ]
+ },
+ {
+  "slug": "20261124-1116",
+  "date": "2026-11-24T11:16:49+09:00",
+  "theme": "食品",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "おせち 早割 2027『板前魂の花籠』和洋風",
+     "point": "ランキングで20位に入っている商品です。レビュー14,389件が集まっていて、9,730円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "白米 無洗米 和の輝き ブレンド米 10kg",
+     "point": "ランキングで21位に入っている商品です。レビュー9,538件が集まっていて、4,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "メガ盛り3kg ボイルずわいがに足",
+     "point": "ランキングで23位に入っている商品です。レビュー4,950件が集まっていて、11,999円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "2-itamae:sandannp",
+    "name": "おせち 早割 2027『板前魂の花籠』和洋風",
+    "price": 9730,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F2-itamae%2Fsandannp%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2F2-itamae%2Fsandannp%2F",
+    "image": "",
+    "shop": "板前魂 おせち",
+    "review_average": 0.0,
+    "review_count": 14389,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 20,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "おせち 早割 2027『板前魂の花籠』和洋風"
+   },
+   {
+    "code": "irisplaza-r:113800",
+    "name": "白米 無洗米 和の輝き ブレンド米 10kg",
+    "price": 4980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Firisplaza-r%2F113800%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Firisplaza-r%2F113800%2F",
+    "image": "",
+    "shop": "アイリスオーヤマ公式",
+    "review_average": 0.0,
+    "review_count": 9538,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 21,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "白米 無洗米 和の輝き ブレンド米 10kg"
+   },
+   {
+    "code": "kouragumi:100075",
+    "name": "メガ盛り3kg ボイルずわいがに足",
+    "price": 11999,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F100075%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fkouragumi%2F100075%2F",
+    "image": "",
+    "shop": "越前かに職人甲羅組",
+    "review_average": 0.0,
+    "review_count": 4950,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 23,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "メガ盛り3kg ボイルずわいがに足"
+   }
+  ]
  }
 ]
