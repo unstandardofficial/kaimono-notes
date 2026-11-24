@@ -178,5 +178,95 @@
     "short_name": "透明 撥水 拭ける キッチンマット 厚さ1.5mm 防カビ 防水"
    }
   ]
+ },
+ {
+  "slug": "20261125-0803",
+  "date": "2026-11-25T08:03:59+09:00",
+  "theme": "キッチン用品",
+  "event": null,
+  "article": {
+   "title": "楽天で売れているキッチン用品 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場のキッチン用品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "アラビア ルノ ティーカップ フロストベリー",
+     "point": "ランキングで16位に入っている商品です。レビュー609件が集まっていて、4,400円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "米びつ 5kg 10kg 真空 おしゃれ 真空保",
+     "point": "ランキングで17位に入っている商品です。レビュー1,264件が集まっていて、18,700円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "STTOKE ストーク こぼれない タンブラー ",
+     "point": "ランキングで20位に入っている商品です。レビュー2,256件が集まっていて、5,500円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "scope:ar65",
+    "name": "アラビア ルノ ティーカップ フロストベリー",
+    "price": 4400,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Far65%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Far65%2F",
+    "image": "",
+    "shop": "scope vers",
+    "review_average": 0.0,
+    "review_count": 609,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 16,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "アラビア ルノ ティーカップ フロストベリー"
+   },
+   {
+    "code": "ooble:ricestocker",
+    "name": "米びつ 5kg 10kg 真空 おしゃれ 真空保存容器",
+    "price": 18700,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fooble%2Fricestocker%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fooble%2Fricestocker%2F",
+    "image": "",
+    "shop": "OoBLE（オーブル",
+    "review_average": 0.0,
+    "review_count": 1264,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 17,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "米びつ 5kg 10kg 真空 おしゃれ 真空保存容器"
+   },
+   {
+    "code": "juntakushop:10000040",
+    "name": "STTOKE ストーク こぼれない タンブラー 保温",
+    "price": 5500,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjuntakushop%2F10000040%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fjuntakushop%2F10000040%2F",
+    "image": "",
+    "shop": "JuntakuSho",
+    "review_average": 0.0,
+    "review_count": 2256,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 20,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "STTOKE ストーク こぼれない タンブラー 保温"
+   }
+  ]
  }
 ]

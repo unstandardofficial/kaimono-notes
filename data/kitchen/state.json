@@ -9,10 +9,26 @@
    "articles": 1,
    "x": 0,
    "threads": 1
+  },
+  "2026-11-25": {
+   "articles": 1,
+   "x": 0,
+   "threads": 1
   }
  },
  "queue": {
   "x": [],
-  "threads": []
+  "threads": [
+   {
+    "text": "これ、気になってた人いませんか？\n【PR】",
+    "reply": "買い替えるならこれ。米びつ 5kg 10kg 真空 おしゃれ 真空保存容器は1,264件のレビュー。18,700円。\nhttps://unstandardofficial.github.io/kaimono-notes/kitchen/posts/20261125-0803.html\nPR",
+    "image": ""
+   },
+   {
+    "text": "これ、気になってた人いませんか？\n【PR】",
+    "reply": "レビューが多くて安心な一品。アラビア ルノ ティーカップ フロストベリーは609件のレビュー。4,400円。\nhttps://unstandardofficial.github.io/kaimono-notes/kitchen/posts/20261125-0803.html\nPR",
+    "image": ""
+   }
+  ]
  }
 }
