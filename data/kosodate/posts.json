@@ -88,5 +88,95 @@
     "short_name": "キッズ パジャマ 長袖 冬 ルームウェア 上下セット"
    }
   ]
+ },
+ {
+  "slug": "20261124-2140",
+  "date": "2026-11-24T21:40:28+09:00",
+  "theme": "キッズ・ベビー・マタニティ",
+  "event": "楽天ブラックフライデー",
+  "article": {
+   "title": "楽天で売れているキッズ・ベビー・マタニティ 3選｜レビューが多い定番から",
+   "intro": "「なんとなく」で選びがちなものほど、評判のいいものに替えるだけで暮らしが楽になることがあります。この記事では、楽天市場のキッズ・ベビー・マタニティの売れ筋から、レビュー件数と評価が高いものを3つ選びました。楽天ブラックフライデーの期間は、買いまわりでポイントが上がるのでまとめ買いにも向いています。",
+   "items": [
+    {
+     "heading": "パンパース パンツ さらさらケア オムツ(3個入",
+     "point": "ランキングで6位に入っている商品です。レビュー70件が集まっていて、18,759円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "RICH WARM 裏シャギー ストレッチパンツ",
+     "point": "ランキングで16位に入っている商品です。レビュー3,412件が集まっていて、898円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "ベビーゲート 階段上 突っ張り 階段 キッチン",
+     "point": "ランキングで18位に入っている商品です。レビュー10,841件が集まっていて、1,640円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "netbaby:407047",
+    "name": "パンパース パンツ さらさらケア オムツ(3個入×2セット)",
+    "price": 18759,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F407047%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F407047%2F",
+    "image": "",
+    "shop": "楽天24 ベビー館",
+    "review_average": 0.0,
+    "review_count": 70,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 6,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "パンパース パンツ さらさらケア オムツ(3個入×2セット)"
+   },
+   {
+    "code": "devirockstore:dt-061",
+    "name": "RICH WARM 裏シャギー ストレッチパンツ 子供服 キッズ",
+    "price": 898,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2Fdt-061%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2Fdt-061%2F",
+    "image": "",
+    "shop": "devirock 楽",
+    "review_average": 0.0,
+    "review_count": 3412,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 16,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "RICH WARM 裏シャギー ストレッチパンツ 子供服 キッズ"
+   },
+   {
+    "code": "high-high:baby-gate-003",
+    "name": "ベビーゲート 階段上 突っ張り 階段 キッチン",
+    "price": 1640,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhigh-high%2Fbaby-gate-003%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fhigh-high%2Fbaby-gate-003%2F",
+    "image": "",
+    "shop": "Hai Hai楽天市",
+    "review_average": 0.0,
+    "review_count": 10841,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 18,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "ベビーゲート 階段上 突っ張り 階段 キッチン"
+   }
+  ]
  }
 ]
