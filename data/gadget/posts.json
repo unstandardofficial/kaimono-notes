@@ -178,5 +178,95 @@
     "short_name": "レコルト 自動調理ポット ラージ RSY-3"
    }
   ]
+ },
+ {
+  "slug": "20261126-1049",
+  "date": "2026-11-26T10:49:09+09:00",
+  "theme": "家電",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている家電 3選｜レビューが多い定番から",
+   "intro": "毎日使うものほど、ちょっとした使いやすさの差が気になりますよね。この記事では、楽天市場の家電の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "COSORI ノンフライヤー CAF-L501 ",
+     "point": "ランキングで11位に入っている商品です。レビュー1,285件が集まっていて、13,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "ハイブリッド加湿器 大容量 5L 超音波式",
+     "point": "ランキングで12位に入っている商品です。レビュー11,650件が集まっていて、6,780円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "レコルト 豆乳メーカー 全自動 スープメーカー",
+     "point": "ランキングで13位に入っている商品です。レビュー22,994件が集まっていて、13,200円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "vesync:kaapafcsnjp0062",
+    "name": "COSORI ノンフライヤー CAF-L501 4.7L大容量",
+    "price": 13980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvesync%2Fkaapafcsnjp0062%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fvesync%2Fkaapafcsnjp0062%2F",
+    "image": "",
+    "shop": "Vesync公式 楽天",
+    "review_average": 0.0,
+    "review_count": 1285,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 11,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "COSORI ノンフライヤー CAF-L501 4.7L大容量"
+   },
+   {
+    "code": "liberesta:aqua-m1",
+    "name": "ハイブリッド加湿器 大容量 5L 超音波式",
+    "price": 6780,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fliberesta%2Faqua-m1%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fliberesta%2Faqua-m1%2F",
+    "image": "",
+    "shop": "LIBER-E",
+    "review_average": 0.0,
+    "review_count": 11650,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 12,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "ハイブリッド加湿器 大容量 5L 超音波式"
+   },
+   {
+    "code": "roomy:win20oct27h03",
+    "name": "レコルト 豆乳メーカー 全自動 スープメーカー",
+    "price": 13200,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin20oct27h03%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin20oct27h03%2F",
+    "image": "",
+    "shop": "インテリアショップ roomy",
+    "review_average": 0.0,
+    "review_count": 22994,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 13,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "レコルト 豆乳メーカー 全自動 スープメーカー"
+   }
+  ]
  }
 ]
