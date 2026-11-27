@@ -538,5 +538,95 @@
     "short_name": "メガ盛り3kg ボイルずわいがに足"
    }
   ]
+ },
+ {
+  "slug": "20261127-1156",
+  "date": "2026-11-27T11:56:19+09:00",
+  "theme": "食品",
+  "event": null,
+  "article": {
+   "title": "楽天で売れている食品 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場の食品の売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "みさき果樹園 みかん",
+     "point": "ランキングで24位に入っている商品です。レビュー18,720件が集まっていて、1,680円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "松屋 牛めしの具（プレミアム仕様）135g 30",
+     "point": "ランキングで25位に入っている商品です。レビュー14,215件が集まっていて、2,740円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "おせち 2027 和洋中おせち 絢爛鳳凰",
+     "point": "ランキングで26位に入っている商品です。レビュー1,417件が集まっていて、15,980円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "misaki-kajuen:mikan601",
+    "name": "みさき果樹園 みかん",
+    "price": 1680,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmisaki-kajuen%2Fmikan601%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fmisaki-kajuen%2Fmikan601%2F",
+    "image": "",
+    "shop": "みさき果樹園",
+    "review_average": 0.0,
+    "review_count": 18720,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 24,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "みさき果樹園 みかん"
+   },
+   {
+    "code": "matsuya:us30",
+    "name": "松屋 牛めしの具（プレミアム仕様）135g 30食",
+    "price": 2740,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuya%2Fus30%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuya%2Fus30%2F",
+    "image": "",
+    "shop": "松屋フーズ",
+    "review_average": 0.0,
+    "review_count": 14215,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 25,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "松屋 牛めしの具（プレミアム仕様）135g 30食"
+   },
+   {
+    "code": "tokatsu-foods:yorokobi2013",
+    "name": "おせち 2027 和洋中おせち 絢爛鳳凰",
+    "price": 15980,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokatsu-foods%2Fyorokobi2013%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokatsu-foods%2Fyorokobi2013%2F",
+    "image": "",
+    "shop": "トオカツフーズ",
+    "review_average": 0.0,
+    "review_count": 1417,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 26,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "おせち 2027 和洋中おせち 絢爛鳳凰"
+   }
+  ]
  }
 ]
