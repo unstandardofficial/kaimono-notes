@@ -268,5 +268,95 @@
     "short_name": "NOVUS ノウス ベビーハイチェア キッズ ベビー"
    }
   ]
+ },
+ {
+  "slug": "20261127-2138",
+  "date": "2026-11-27T21:38:58+09:00",
+  "theme": "キッズ・ベビー・マタニティ",
+  "event": null,
+  "article": {
+   "title": "楽天で売れているキッズ・ベビー・マタニティ 3選｜レビューが多い定番から",
+   "intro": "どれを買えばいいか迷ったときは、たくさんの人に選ばれている商品から見るのが近道です。この記事では、楽天市場のキッズ・ベビー・マタニティの売れ筋から、レビュー件数と評価が高いものを3つ選びました。",
+   "items": [
+    {
+     "heading": "パンパース 肌へのいちばん オムツ パンツ(4袋",
+     "point": "ランキングで8位に入っている商品です。レビュー620件が集まっていて、8,959円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "洗える ファイバーダウン 中綿ジャケット キッズ",
+     "point": "ランキングで23位に入っている商品です。レビュー182件が集まっていて、2,998円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    },
+    {
+     "heading": "おむつ パンツ 3個セット 大容量 ゲンキ M ",
+     "point": "ランキングで25位に入っている商品です。レビュー2,834件が集まっていて、2,880円で買えます（2026-11-16時点の価格）。",
+     "who_for": "評判を見てから選びたい人に"
+    }
+   ],
+   "summary": "迷ったら、レビュー件数が多くて評価も高いものから選ぶと失敗しにくいです。価格は変わることがあるので、購入前にショップのページで確認してください。"
+  },
+  "products": [
+   {
+    "code": "netbaby:406536",
+    "name": "パンパース 肌へのいちばん オムツ パンツ(4袋入)",
+    "price": 8959,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F406536%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F406536%2F",
+    "image": "",
+    "shop": "楽天24 ベビー館",
+    "review_average": 0.0,
+    "review_count": 620,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 8,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "パンパース 肌へのいちばん オムツ パンツ(4袋入)"
+   },
+   {
+    "code": "devirockstore:1ubl19001",
+    "name": "洗える ファイバーダウン 中綿ジャケット キッズ",
+    "price": 2998,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2F1ubl19001%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2F1ubl19001%2F",
+    "image": "",
+    "shop": "devirock 楽",
+    "review_average": 0.0,
+    "review_count": 182,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 23,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "洗える ファイバーダウン 中綿ジャケット キッズ"
+   },
+   {
+    "code": "irisplaza-r:1925663",
+    "name": "おむつ パンツ 3個セット 大容量 ゲンキ M 150枚",
+    "price": 2880,
+    "url": "https://hb.afl.rakuten.co.jp/hgc/5989c18f.c1eb5020.5989c190.04bbb755/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Firisplaza-r%2F1925663%2F&m=https%3A%2F%2Fitem.rakuten.co.jp%2Firisplaza-r%2F1925663%2F",
+    "image": "",
+    "shop": "アイリスオーヤマ公式",
+    "review_average": 0.0,
+    "review_count": 2834,
+    "catchcopy": "",
+    "caption": "",
+    "rank": 25,
+    "genre_name": "",
+    "postage_free": false,
+    "point_rate": 1,
+    "extra": {
+     "as_of": "2026-11-16"
+    },
+    "short_name": "おむつ パンツ 3個セット 大容量 ゲンキ M 150枚"
+   }
+  ]
  }
 ]
